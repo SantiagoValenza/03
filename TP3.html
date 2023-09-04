@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP N°3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000000;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(107, 255, 255);
+            background-color: #580C1F;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(101, 255, 255);
+            background-color: #74121D;
+            text-decoration: underline;
+        }
+
+        h3 {
+            color: #A51C30
+        }
+
+        p {
+            color: #38A3A5
+        }
+
+        ol {
+            color: #57CC99
+        }
+
+        li {
+            color: #57CC99
+        }
+
+        ul {
+            color: #57CC99;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabajo practico N°3</h1>
+    <h2>Santiago Valenza-4<sup>to</sup>1<sup>ra</sup></h2>
+
+    <h3>1.1- ¿Qué significa CSS?</h3>
+    <p>CSS significa Hojas de Estilo en Cascada, en inglés es Cascading Style Sheets
+        y te dará los estilos (diseño) necesarios para que un sitio web o una aplicación web se vean visualmente bien.
+    </p><br>
+
+    <h3>1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h3>
+    <p>CSS sirve para generar unb ascpecto bonito y agradable para el espectador/usuario. Algunas de las cosas que podes
+        hacer es:</p>
+    <ol start="1">
+        <li><strong>Definir aspectos visuales de un sitio</strong></li>
+        <li><strong>Crear características general a todo el sitio o aplición web</strong></li>
+        <li><strong>Actualización de los aspectos visuales de forma oganizada</strong></li>
+
+        <li><strong>Dar colores a los fondos y los textos</strong></li>
+        <li><strong>Cambiar las tipografías (fuentes) y tamaños a los textos</strong></li>
+        <li><strong>Aplicar márgenes</strong></li>
+        <li> <strong>Aplicar bordes</strong></li>
+        <li><strong>Hacer adaptativo un sitio o aplicación web para que se vea de forma correcta en cualquier
+                dispotivo</strong></li>
+
+    </ol><br>
+    <p>El programa que se utiliza para interpretar el css es el </p><br>
+
+    <h3>1.3- ¿A qué se llama regla de CSS? </h3>
+    <p>Se le llama regla de css a los conjuntos selectores, llaves, propiedad y valores.</p>
+
+    <h3>1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
+        explicar sus elementos.
+    </h3>
+
+    <p>La anatomia de la regla de css es un conjunto de propiedades y valores que se aplicarán a una o varias etiquetas
+        según necesitemos.</p>
+    <img src="http://web.xn--ensead-zwa.com.ar/assets/static/csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.png"
+        height="350" width="500" start="1">
+    <ol start="1">
+        <li>
+            <strong>Selector</strong>: selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos "p" ).
+            Para dar estilo a un elemento diferente, solo cambia el selector.
+        </li>
+        <li><strong>Declaración</strong>: aplica las propiedades que querés dar al elemento seleccionado en el Selector.
+            En este caso hay una sola regla, pero puede haber más.</li>
+        <li><strong>Propiedades</strong>: es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la
+            propiedad es color que le dará color a las
+            letras de los párrafos. Siempre las propiedades se ubicarán a la izquierda.</li>
+        <li><strong>Valor de la propiedad</strong>: las propiedades deben tener un valor. Cada propiedad tiene valores
+            definidos. Cada valor se ubicará a la derecha.</li>
+    </ol><br>
+
+    <h3>1.5- ¿Qué es un selector en CSS? </h3>
+    <p>Un selector de CSS nos permitirá aplicar estilos a elementos específicos de HTML.</p>
+
+    <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+
+    <ol start="1">
+        <li><strong>Selector Universal</strong><br>
+            Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.<br>
+
+            <img src="/assets/imagen/ejemplouniversal.png">
+        </li><br>
+
+        <li><strong>Selector por etiquetas</strong><br>
+            Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar <>. Por ejemplo.<br>
+                <img src="/assets/imagen/ejemploertiqueta1.png"><br>
+                Podemos, seleccionar varias etiquetas al mismo tiempo concatenándolas con el signo , (coma). Por
+                ejemplo:<br>
+                <img src="/assets/imagen/ejemploetiqueta2.png"><br>
+                En el ejemplo anterior, tanto la p como la h1 tendrán de color de letra roja. Reordar que se aplicarán a
+                todas las etiquetas del documento <strong>HTML</strong>.
+        </li><br>
+        <li><strong>Selector Descendente</strong><br>
+            Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores
+            siempre están formados por dos o más selectores separados entre si. El último selector será el elemento HTML
+            al que
+            se le aplicará las propiedades de CSS. Por ejemplo: <br>
+            <img src="/assets/imagen/ejemplodescendente.png">
+        </li><br>
+        <li><strong>Selector de Claces</strong><br>
+            Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores)
+            identifican este punto y lo distinguen del resto de los selectores. Por ejemplo:<br>
+            <img src="/assets/imagen/ejemploclases.png"><br>
+            Para definir en HTML el uso de los selectores de clase, se utiliza el atributo class. En CSS se aplica asi:
+            <br>
+            <img src="/assets/imagen/ejemploclaces2.png"><br>
+            A todas las etiquetas que tengan la clase primer-parrafo, se aplicará un font-size (tamaño de letra)
+            específico.<br>
+
+            Las clases pueden ser utilizadas varias veces y en distintas etiquetas, lo que nos hace pensar que es
+            necesario ver cuales son la
+            características que queremos aplicar a las etiquetas que sean comunes a varias.<br>
+
+            A su vez, podemos seleccionar un conjunto de etiquetas que selecione todas las etiquetas que tengan una
+            clase particular.<br>
+            <img src="/assets/imagen/ejemploclaces3.png">
+        </li><br>
+        <li><strong>Selector de ID</strong><br>
+            Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra
+            página.
+            Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre. Por
+            ejemplo:<br>
+            <img src="/assets/imagen/ejemploid.png"><br>
+            Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el # seguido del nombre:
+            <br>
+            <img src="/assets/imagen/ejemploid2.png"><br>
+            De la misma forma que el caso anterior, podemos seleccionar un elemento basado en el id. Por ejemplo:<br>
+            <img src="/assets/imagen/ejemploid3.png"><br>
+        </li>
+    </ol>
+
+    <h3>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS? </h3>
+    <ol start="1">
+        <ul><strong>Seleccion de elementos</strong>
+            <li>CSS utiliza selectores para identificar los elementos HTML a los que se les
+                aplicarán los estilos. Los selectores pueden seleccionar elementos por etiqueta, clase, ID, atributo y
+                otros criterios.</li>
+        </ul><br>
+        <ul><strong>Declaracion de estilos</strong>
+            <li>Una vez seleccionados los elementos, se especifican las propiedades de estilo
+                que se desean aplicar. Por ejemplo, se pueden definir colores, tamaños de fuente, márgenes, bordes,
+                fondos, etc.</li>
+        </ul><br>
+        <ul><strong>Asociación de estilos</strong>
+            <li>Para asociar los estilos con los elementos HTML, se utiliza una regla de estilo. Una regla de estilo
+                consta de un selector y un bloque de declaraciones de estilo.
+                El selector selecciona los elementos a los que se aplicarán los estilos, y el bloque de declaraciones
+                contiene las propiedades y valores de estilo.</li>
+        </ul><br>
+        <ul><strong>Cascada y especificidad</strong>
+            <li>CSS utiliza el concepto de cascada para determinar qué estilo se aplicará a un elemento en caso de que
+                existan múltiples reglas que coincidan con él.
+                La cascada asigna prioridad a las reglas según su especificidad y su orden de aparición en el código.
+            </li><br>
+            <ul><strong>Herencia</strong>
+                <li>CSS permite que los estilos se hereden de elementos padre a elementos hijos. Esto significa que los
+                    estilos
+                    aplicados a un elemento se aplicarán también a sus elementos hijos, a menos que se especifique lo
+                    contrario.</li>
+            </ul><br>
+            <ul><strong>Estilos externos e internos</strong></ul>
+            <li>CSS se puede incluir en una página web de diferentes formas. Puede estar dentro de la etiqueta "style"
+                en el
+                propio documento html (estilos internos),
+                o se puede enlazar a un archivo CSS externo mediante la etiqueta "link" (estilos externos). Los estilos
+                externos son útiles cuando se desea aplicar los mismos estilos a varias páginas web.</li>
+        </ul><br>
+    </ol>
+    <h3>.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+    <ol start="1">
+        Hay 3 formas de vincular HTML y el CSS
+        <li><strong>Utilizando la etiqueta "style": En nuestro HTML y dentro de la etiqueta "head" utilizaremos la
+                etiqueta "style"
+                es decir que los CSS se aplican al MISMO docuemnto HTML. Por ejemplo:
+                <img src="/assets/imagen/ejemplovincular1.png"></strong></li><br>
+        <li><strong>Utilizando el atributo style:</strong> En nuestro HTML aplicaremos estilos directamente a la
+            etiqueta.
+            Recordemos que los atributos con características de un etiqueta. Veamos un ejemplos utilizando el
+            atributo style:
+            <img src="/assets/imagen/ejemplovincular2.png">
+        </li><br>
+        <li><strong>Utilizando un archivo externo:</strong> Esta opción es la que nos permite vincular un archivo
+            HTML con un archivo CSS. <br>
+            Los archivos CSS tienen extensión .css. Suelen llamarse estilos.css, style.css o también podés darle el
+            nombre que prefieras para tu proyecto.<br>
+            Si trabajamos en Visual Studio Code, podemos organizar los archivos CSS dentro de una carpeta llamada
+            css. En el head del HTML debemos utilizar ><br>
+            la etiqueta link vemos el ejemplo:<br>
+            <img src="/assets/imagen/ejemplovincular3.png">
+        </li><br>
+
+    </ol>
+    <h3>1.9- Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+        siguientes pasos:
+    </h3>
+    <p>La url de los dos diseños son: view-source:http://www.csszengarden.com/219/ y
+        view-source:http://www.csszengarden.com/212/<br>
+        Los html son iguales (dentro del body)<br>
+        Lo distinto es el ink al css<br>
+        Lo que contribuye para que cambie el siñeo es el CSS<br>
+        Si, son iguales<br>
+        Si, puede tener diferentes diseños con la ayuda de CSS<br></p>
+
+
+    <h3>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada
+        propiedad.
+    </h3>
+    <h3>Valores posibles:<h3></h3>
+
+        <p>color:El valor de color puede variar con los colores RGB
+
+        <p> background-color:El valor de color puede variar con los colores RGB</p>
+
+        <p>font-size: xx-small, x-small, small, medium, large, x-large, xx-large</p>
+
+        <p> font-weight:normal, bold, lighter, bolder, 100, 200, 300, 400, 500, 600, 700, 800, 900</p>
+
+        <p> font-style:normal, italic, oblique</p>
+
+        <p>font-family:nombre de familia o generico</p>
+
+        <p>text-align:start, end, left, right, center, justify, match_parent</p>
+
+        <p>text-decoration:puede usar los valores de cada una de las propiedades de la forma larga:
+            text-decoration-line, text-decoration-color,
+            y text-decoration-style</p>
+
+        <p>text-transform:capitalize, uppercase, lowercase, none, full-width</p>
+
+        <p>letter-spacing: length:un largo a utilizar para el espaciado horizontal y vertical,length length: el primero
+            da el
+            espaciado horizontal (espacio entre celdas de una fila) y el segundo el espaciado vertical (espacio entre
+            celdas de una columna).</p>
+
+        <p>line-height:normal, numero, longitud, porcentaje</p>
+
+        <h3>2.1- Crea un archivo HTML con la estructura básica de una página web, agregar como título “Práctica de CSS”. 
+            Crea un encabezado de página con el mismo título, agrega un subtítulo con tu Nombre y Apellido.</h3>
+
+</body>
+
+</html>
